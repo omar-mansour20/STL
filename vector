@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define  IOS ios_base::sync_with_stdio(0); cin.tie(0);
+
+
+int main(){
+    IOS;
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int n,q ;
+    cin>>n>>q;
+    n+=2;
+    long long arr[n];
+    long long operations[n];
+    fill(operations,operations+n,0);
+    fill(arr,arr+n,0);
+
+    for(int x=1;x<n-1;x++){
+        cin>>arr[x];
+    }
+
+    int l,r;
+    long long num;
+
+    for(int x=0;x<q;x++){
+        cin>>l>>r>>num;
+        operations[l]+=num;
+        operations[r+1]-=num;
+    }
+
+    for(int x=1;x<n;x++){
+        operations[x]+=operations[x-1];
+    }
+
+    for(int x=1;x<n-1;x++){
+        cout<<arr[x]+operations[x]<<" ";
+    }
+
+}
+
+//  2 1 1 0 1       2 1 4 3 4         4 3 6 5 6
+
