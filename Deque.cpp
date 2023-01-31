@@ -30,6 +30,10 @@ int main(){
     // returns the last element of the deque
 
 
+    
+    // Hint
+    // auto -> is a keyword that specifies that the type of the variable that is being declared will be automatically deducted from its initializer
+
 
     auto it =dq.begin();
     // returns an iterator pointing to the first element in the deque
