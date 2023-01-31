@@ -90,7 +90,7 @@ int main(){
     // used to swap the contents of one vector with another vector of same type
 
     v.erase(v.begin());
-    // used to remove element from a container from the specified position
+    // used to remove an element from a container from the specified position
 
     v.erase(v.begin(),v.begin()+3);
     // used to remove elements from a container from the specified range
