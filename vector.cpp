@@ -41,6 +41,8 @@ int main(){
 
     auto it6 =v.cend();
     // returns a constant iterator pointing to the last element in the vector
+    
+    
 
     cout<<v.size();
     // returns the number of elements in the vector
@@ -59,6 +61,8 @@ int main(){
 
     cout<<v.empty();
     // returns if the vector is empty or not
+    
+    
 
     cout<<v[0];
     // returns the element at index 0
@@ -68,8 +72,7 @@ int main(){
 
     v.assign(5,10);
     // assigns new value to the vector elements by replacing old ones (if there are elements in it)
-
-
+    
     v.insert(v.begin(),1);
     // inserts element before the element at the specified position
 
@@ -94,6 +97,7 @@ int main(){
 
     v.clear();
     // removes all elements of the vector and makes size=0
+
 
 
 }
