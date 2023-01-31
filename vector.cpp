@@ -4,12 +4,15 @@ using namespace std;
 int main(){
 
     vector<int >v={1,2,3};
-    
+
+    vector<int>v2(v);
+    // copies elements of vector v into vector v2
+
     v.push_back(4);
     // used to insert an element at the end        {1,2,3,4}
 
     v.pop_back();
-    // used to delete the last element            {1,2,3}
+    // used to delete the last element             {1,2,3}
 
     cout<<v.front();
     // returns the first element of the vector    (1)
@@ -39,36 +42,58 @@ int main(){
     auto it6 =v.cend();
     // returns a constant iterator pointing to the last element in the vector
 
-
     cout<<v.size();
+    // returns the number of elements in the vector
+
     cout<<v.capacity();
+    // returns the size of the storage space currently allocated to the vector but as a number of elements
+
     cout<<v.max_size();
+    // returns the maximum number of elements that vector can hold
 
     v.resize(4);
+    // resizes the vector so that it contains n elements.
+
     v.shrink_to_fit();
+    // reduces the capacity of the vector to fit its size and destroys the other elements that beyond the capacity
+
     cout<<v.empty();
+    // returns if the vector is empty or not
 
     cout<<v[0];
+    // returns the element at index 0
+
     cout<<v.at(0);
+    // returns the element at index 0
 
     v.assign(5,10);
-    v.insert(v.begin()+2,4);
+    // assigns new value to the vector elements by replacing old ones (if there are elements in it)
+
+
+    v.insert(v.begin(),1);
+    // inserts element before the element at the specified position
+
+    v.insert(v.begin(),2,1);
+    // inserts 2 elements with value 1 at begin
+
     v.emplace(v.begin()+2,4);
+    // it extends the container by inserting new element at position
+    // here the vector size increases by one
+
     v.emplace_back(4);
-    vector<int>v2(v);
-    //equals
-    v.swap(v);
+    // inserts a new element ay the end
+
+    v2.swap(v);
+    // used to swap the contents of one vector with another vector of same type
 
     v.erase(v.begin());
-    v.erase(v.begin(),v.begin()+3)
+    // used to remove element from a container from the specified position
+
+    v.erase(v.begin(),v.begin()+3);
+    // used to remove elements from a container from the specified range
+
     v.clear();
-
-
-
-
-
-
-
+    // removes all elements of the vector and makes size=0
 
 
 }
