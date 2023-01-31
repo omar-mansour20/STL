@@ -14,16 +14,16 @@ int main(){
     // adds an element to the top
 
     s.pop();
-    // deletes the element at the top (most recent entered element)
+    // deletes the element from the top (most recent entered element)
 
     cout<<s.top();
-    // returns the of the element at the top
+    // returns the value of the element at the top
 
     cout<<s.size();
     // returns the size of the stack
 
     cout<<s.empty();
-    // returns if thr stack is empty or not
+    // returns if the stack is empty or not
 
     stack<int>s2;
     s2.swap(s);
