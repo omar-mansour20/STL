@@ -10,7 +10,7 @@ int main(){
     
     stack<int>s;
     s.push(1);
-    s.push(2);
+    s.emplace(2);
     // adds an element to the top
 
     s.pop();
