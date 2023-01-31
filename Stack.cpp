@@ -27,7 +27,7 @@ int main(){
 
     stack<int>s2;
     s2.swap(s);
-    // used to swap the contents of one stack with another stack of same type
+    // used to swap the contents of one stack with another stack of the same type
 
 }
 
