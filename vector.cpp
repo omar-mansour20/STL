@@ -2,7 +2,13 @@
 using namespace std;
 
 int main(){
-
+    /*
+    - Vector is the same as array but it is dynamic which means that it has the  ability to resize itself automatically when an element is inserted or deleted
+    - Vector elements are placed in contiguous memory storage
+    - fast in insert and delete at the end
+    - slow in insert and delete at the beginning
+     */
+    
     vector<int >v={1,2,3};
 
     vector<int>v2(v);
@@ -41,8 +47,8 @@ int main(){
 
     auto it6 =v.cend();
     // returns a constant iterator pointing to the last element in the vector
-    
-    
+
+
 
     cout<<v.size();
     // returns the number of elements in the vector
@@ -61,8 +67,8 @@ int main(){
 
     cout<<v.empty();
     // returns if the vector is empty or not
-    
-    
+
+
 
     cout<<v[0];
     // returns the element at index 0
@@ -72,7 +78,7 @@ int main(){
 
     v.assign(5,10);
     // assigns new value to the vector elements by replacing old ones (if there are elements in it)
-    
+
     v.insert(v.begin(),1);
     // inserts element before the element at the specified position
 
@@ -90,15 +96,13 @@ int main(){
     // used to swap the contents of one vector with another vector of same type
 
     v.erase(v.begin());
-    // used to remove an element from a container from the specified position
+    // used to remove element from a container from the specified position
 
     v.erase(v.begin(),v.begin()+3);
     // used to remove elements from a container from the specified range
 
     v.clear();
     // removes all elements of the vector and makes size=0
-
-
 
 }
 
