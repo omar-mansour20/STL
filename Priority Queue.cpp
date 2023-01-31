@@ -6,9 +6,6 @@ int main(){
     - Priority queue is a type of container adapter.
     - It is a special kind of queue such that the first (top) element of the queue is either the greatest or the smallest of all elements in the queue.
     - Priority queue is implemented as max heap by default it also can be changed to min heap by passing another parameter while creating a priority queue.
-    - Insert and remove from back of front takes const time
-    - Insert and remove from the middle takes linear time
-
      */
 
     priority_queue<int>pq;
