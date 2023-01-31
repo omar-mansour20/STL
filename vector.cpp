@@ -3,13 +3,8 @@ using namespace std;
 
 int main(){
 
-    /*
-    v.insert(position , size , value);
-    -> inserts elements with value of 1 at a spesified position 
-    
-    
-    */
     vector<int >v={1,2,3};
+    
     v.push_back(4);
     // used to insert an element at the end        {1,2,3,4}
 
