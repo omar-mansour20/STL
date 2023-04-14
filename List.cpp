@@ -6,7 +6,7 @@ int main(){
   - List (doubly linked list) is a sequence container that allows non-contiguous memory allocation
   - The same functions as vector but there are more !
   */
-   list<int>l={1,2,3,4,5};
+    list<int>l={1,2,3,4,5};
     list<int>l2={6,7,8,9,10};
     int num,n;
     list<int>::iterator it,first,last;
