@@ -92,7 +92,7 @@ int main(){
     // inserts 2 elements with value num at begin
 
     l.emplace_front(num);
-    // it extends the container by inserting new element at position
+    // it extends the container by inserting new element at front
     // here the list size increases by one
 
     l.emplace_back(num);
