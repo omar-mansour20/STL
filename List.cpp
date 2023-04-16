@@ -83,7 +83,7 @@ int main(){
 
 
     l.assign(5,10);
-    // assigns new value to the list elements by replacing old ones (if there are elements in it)
+    // assigns new values to the list elements by replacing old ones (if there are elements in it)
 
     l.insert(l.begin(),num);
     // inserts element before the element at the specified position
