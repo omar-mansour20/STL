@@ -1,4 +1,3 @@
-# STL
 # <h1><b>STL</b></h1>
  - Stands for Standard Template Library.
  - Is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc.
