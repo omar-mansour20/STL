@@ -79,7 +79,7 @@ int main() {
 
     auto up=s.upper_bound(num);
     // returns an iterator pointing to the element next to the element passed
-    // if the element passed exceeds the maximum value in the set , then it returns iterator pointing to the last in the set
+    // if the element passed exceeds the maximum value in the set , then it returns iterator pointing to the last element in the set
 
     s.equal_range(num);
     // returns a pair of iterators : the lower and upper bound
