@@ -87,7 +87,7 @@ int main() {
     
     
     s.clear();
-    // clears the content oif the set
+    // clears the content of the set
 
     s.swap(s2);
     // swaps the content of the two sets
