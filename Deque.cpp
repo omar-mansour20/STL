@@ -5,6 +5,7 @@ int main(){
     /*
     - Deque (Double-ended queue) is a sequence container.
     - Deque is a special case of queue where insertion and deletion operations are possible at both the ends.
+    - Inserte and delete from front takes time o(1).
      */
 
     deque<int>dq={1,2,3};
