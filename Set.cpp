@@ -70,7 +70,7 @@ int main() {
 
     s.find(num);
     // returns an iterator pointing to the element passed in the parameter
-    // if it does not exist it returns the iterator to the end
+    // if it does not exist it returns the iterator to the end -> s.end()
 
     auto lw=s.lower_bound(num);
     // returns an iterator pointing to the element passed in the parameter
@@ -102,7 +102,7 @@ int main() {
     // returns the maximum number of elements that set can hold
 
     s.count(num);
-    // returns if the element passed in the parameter is in the set or not
+    // returns if the element passed in the parameter is in the set or not -> (1 or 0)
 
 
 }
